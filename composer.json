@@ -1,0 +1,30 @@
+{
+    "name": "miraiportal/job-history",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../*"
+        }
+    ],
+    "require": {
+        "php": "^8.4",
+        "miraiportal/job-state": "dev-main",
+        "nesbot/carbon": "^3.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Miraiportal\\JobHistory\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Miraiportal\\JobHistory\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
